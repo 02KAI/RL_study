@@ -1,0 +1,54 @@
+# defaults:
+#   - _self_
+
+# exp_name: ppo_experiment
+# env: HalfCheetah-v4
+# learning_rate: 3e-4
+# seed: 1
+# total_timesteps: 2000000
+# torch_deterministic: true
+# cuda: true
+# track: false
+# wandb_project_name: ppo-implementation-details
+# wandb_entity: null
+# capture_video: false
+
+# # Algorithm-specific arguments
+# ppo:
+#   num_envs: 8
+#   num_steps: 2048
+#   anneal_lr: true
+#   gae: true
+#   gamma: 0.99
+#   gae_lambda: 0.95
+#   num_minibatches: 32
+#   update_epochs: 10
+#   norm_adv: true
+#   clip_coef: 0.2
+#   clip_vloss: true
+#   ent_coef: 0.0
+#   vf_coef: 0.5
+#   max_grad_norm: 0.5
+#   target_kl: null
+
+defaults:
+  - _self_
+
+env:
+  name: "HalfCheetah-v4"
+  num_envs: 8
+
+ppo:
+  actor_lr: 3e-4
+  critic_lr: 1e-3
+  clip_param: 0.2
+  max_grad_norm: 0.5
+  ppo_epochs: 10
+  batch_size: 1024
+  gamma: 0.99
+  gae_lambda: 0.95
+
+train:
+  num_episodes: 10
+  max_steps: 3000
+  render: False
