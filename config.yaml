@@ -17,9 +17,9 @@ ppo:
   gae_lambda: 0.95
 
 train:
-  num_episodes: 2
-  save_interval: 2
-  log_interval: 1
+  num_episodes: 1000
+  save_interval: 200
+  log_interval: 10
   render: False
 
 eval:

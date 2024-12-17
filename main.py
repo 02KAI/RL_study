@@ -72,6 +72,7 @@ class Actor(nn.Module):
         
     def forward(self, state):
         mean = self.net(state)
+        mean = torch.tanh(mean)
         log_std = torch.clamp(self.log_std, -2, 2) 
         std = log_std.exp().expand_as(mean)
         return mean, std
