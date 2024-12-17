@@ -72,7 +72,6 @@ class Actor(nn.Module):
         
     def forward(self, state):
         mean = self.net(state)
-        mean = torch.tanh(mean)
         log_std = torch.clamp(self.log_std, -2, 2) 
         std = log_std.exp().expand_as(mean)
         return mean, std
@@ -113,14 +112,16 @@ class PPO:
         self.gae_lambda = cfg.ppo.gae_lambda
         
     def get_action(self, state):
-        # if len(state.shpanape) == 1:
-        #     state = np.exd_dims(state, axis=0)
+
         state = torch.FloatTensor(state).to(device)
         mean, std = self.actor(state)
         dist = Normal(mean, std)
-        action = dist.sample()
-        action_log_prob = dist.log_prob(action).sum(dim=-1)
-        return action.cpu().detach().numpy(), action_log_prob.cpu().detach().numpy()
+        raw_action = dist.sample()  
+        action = torch.tanh(raw_action)  
+        action_log_prob = dist.log_prob(raw_action).sum(dim=-1)
+
+        log_prob = action_log_prob - torch.log(1 - action.pow(2) + 1e-6).sum(dim=-1)
+        return action.cpu().detach().numpy(), log_prob.cpu().detach().numpy()
     
     def update(self, states, actions, log_probs, returns, advantages):
         states = torch.FloatTensor(states).to(device)
@@ -244,19 +245,16 @@ class PPO:
             done = False
             while not done:
                 with torch.no_grad():
-                    # Add batch dimension to state if needed
                     if len(state.shape) == 1:
                         state = np.expand_dims(state, axis=0)  
                     state_tensor = torch.FloatTensor(state).to(device)
                     mean, _ = self.actor(state_tensor)  
                     action = mean.cpu().numpy()[0]  
-                
-                # Step in the environment
+
                 state, reward, terminated, truncated, _ = env.step(action)
                 done = terminated or truncated
                 total_reward += reward
 
-            # Log the reward to WandB
             wandb.log({
                 "evaluation_episode": episode + 1,
                 "evaluation_reward": total_reward
