@@ -6,11 +6,14 @@ import torch.nn as nn
 import torch.optim as optim
 import logging
 import hydra
+import os
+import wandb
+
 from torch.distributions import Normal
 from omegaconf import DictConfig
-import wandb
 from datetime import datetime
-import os
+from gymnasium.wrappers import RecordVideo
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 log = logging.getLogger(__name__)
 
@@ -234,8 +237,12 @@ class PPO:
         
         return last_actor_path 
 
-    def evaluate(self, env_name, actor_path, num_episodes=10, render=False):
-        env = gym.make(env_name, render_mode="human" if render else None)
+    def evaluate(self, env_name, actor_path, num_episodes=10, render=False, save_video_path="videos"):
+
+        os.makedirs(save_video_path, exist_ok=True)
+        env = gym.make(env_name, render_mode="rgb_array" if not render else "human")
+        env = RecordVideo(env, video_folder=save_video_path, episode_trigger=lambda x: True)
+
         self.actor.load_state_dict(torch.load(actor_path, map_location=device))
         self.actor.eval()
 
@@ -249,7 +256,8 @@ class PPO:
                         state = np.expand_dims(state, axis=0)  
                     state_tensor = torch.FloatTensor(state).to(device)
                     mean, _ = self.actor(state_tensor)  
-                    action = mean.cpu().numpy()[0]  
+                    # action = mean.cpu().numpy()[0]  
+                    action = torch.tanh(mean).cpu().numpy()[0]
 
                 state, reward, terminated, truncated, _ = env.step(action)
                 done = terminated or truncated
@@ -262,6 +270,7 @@ class PPO:
 
             log.info(f"Episode {episode+1}: Reward: {total_reward:.2f}")
         env.close()
+        log.info(f"Videos saved to: {save_video_path}")
 
 @hydra.main(config_path=".", config_name="config")
 def main(cfg: DictConfig):
@@ -270,7 +279,7 @@ def main(cfg: DictConfig):
     agent = PPO(envs, cfg)
     
     model_path = agent.train(cfg, save_interval=cfg.train.save_interval, log_interval=cfg.train.log_interval)
-    agent.evaluate(cfg.env.name, actor_path=model_path, num_episodes=cfg.eval.eval_episodes, render=cfg.eval.render)
+    agent.evaluate(cfg.env.name, actor_path=model_path, num_episodes=cfg.eval.eval_episodes, render=cfg.eval.render, save_video_path="videos")
     wandb.finish()
 
 if __name__ == "__main__":
