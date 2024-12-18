@@ -1,0 +1,1 @@
+{"evaluation_episode":10,"_wandb":{"runtime":86},"average_reward":-633.3763881208541,"_timestamp":1.734436206956631e+09,"actor_loss":-0.016444014571607112,"_runtime":86.603443795,"critic_loss":141.87413330078124,"evaluation_reward":-0.6310055657271125,"episode":2,"_step":11,"global_step":2000}

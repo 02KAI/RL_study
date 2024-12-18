@@ -1,0 +1,42 @@
+{
+  "os": "Linux-6.8.0-48-generic-x86_64-with-glibc2.35",
+  "python": "3.9.20",
+  "startedAt": "2024-12-18T02:15:04.606268Z",
+  "program": "/home/zhikai/code/RL_study/main.py",
+  "codePath": "main.py",
+  "git": {
+    "remote": "https://github.com/02KAI/RL_study.git",
+    "commit": "9e0bfb0a2fca1cbf7c093e209ba2e16abb426229"
+  },
+  "email": "zhikai.zhao.chn@gmail.com",
+  "root": "/home/zhikai/code/RL_study/outputs/2024-12-18/11-15-03",
+  "host": "Adam",
+  "username": "zhikai",
+  "executable": "/home/zhikai/miniconda3/envs/rl4co/bin/python",
+  "cpu_count": 6,
+  "cpu_count_logical": 12,
+  "gpu": "NVIDIA TITAN X (Pascal)",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "502392610816",
+      "used": "146975420416"
+    }
+  },
+  "memory": {
+    "total": "67332341760"
+  },
+  "cpu": {
+    "count": 6,
+    "countLogical": 12
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA TITAN X (Pascal)",
+      "memoryTotal": "12884901888",
+      "cudaCores": 3584,
+      "architecture": "Pascal"
+    }
+  ],
+  "cudaVersion": "12.2"
+}

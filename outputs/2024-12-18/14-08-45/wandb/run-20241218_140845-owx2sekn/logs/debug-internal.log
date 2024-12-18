@@ -1,0 +1,16 @@
+{"time":"2024-12-18T14:08:45.861529808+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-12-18T14:08:45.861572822+09:00","level":"INFO","msg":"created symlink","path":"/home/zhikai/code/RL_study/outputs/2024-12-18/14-08-45/wandb/run-20241218_140845-owx2sekn/logs/debug-core.log"}
+{"time":"2024-12-18T14:08:45.969962091+09:00","level":"INFO","msg":"created new stream","id":"owx2sekn"}
+{"time":"2024-12-18T14:08:45.969998021+09:00","level":"INFO","msg":"stream: started","id":"owx2sekn"}
+{"time":"2024-12-18T14:08:45.970035247+09:00","level":"INFO","msg":"sender: started","stream_id":"owx2sekn"}
+{"time":"2024-12-18T14:08:45.970027051+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"owx2sekn"}}
+{"time":"2024-12-18T14:08:45.970024043+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"owx2sekn"}}
+{"time":"2024-12-18T14:08:46.327352706+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-18T14:08:48.054108104+09:00","level":"INFO","msg":"stream: closing","id":"owx2sekn"}
+{"time":"2024-12-18T14:08:48.054153676+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-18T14:08:48.054892463+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-18T14:08:50.501793587+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-18T14:08:50.738106463+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"owx2sekn"}}
+{"time":"2024-12-18T14:08:50.738176856+09:00","level":"INFO","msg":"sender: closed","stream_id":"owx2sekn"}
+{"time":"2024-12-18T14:08:50.738174958+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"owx2sekn"}}
+{"time":"2024-12-18T14:08:50.738267623+09:00","level":"INFO","msg":"stream: closed","id":"owx2sekn"}

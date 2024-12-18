@@ -1,0 +1,35 @@
+_wandb:
+    value:
+        cli_version: 0.18.6
+        m: []
+        python_version: 3.9.20
+        t:
+            "1":
+                - 1
+                - 50
+                - 55
+                - 105
+            "2":
+                - 1
+                - 50
+                - 55
+                - 105
+            "3":
+                - 2
+                - 16
+                - 23
+                - 55
+            "4": 3.9.20
+            "5": 0.18.6
+            "8":
+                - 5
+            "12": 0.18.6
+            "13": linux-x86_64
+env:
+    value: '{''name'': ''HalfCheetah-v4'', ''num_envs'': 8, ''seed'': 42}'
+eval:
+    value: '{''eval_episodes'': 30, ''render'': False}'
+ppo:
+    value: '{''actor_lr'': 0.0003, ''critic_lr'': 0.001, ''clip_param'': 0.2, ''max_grad_norm'': 0.5, ''ppo_epochs'': 10, ''batch_size'': 1024, ''gamma'': 0.99, ''gae_lambda'': 0.95}'
+train:
+    value: '{''num_episodes'': 1000, ''save_interval'': 100, ''log_interval'': 10, ''render'': False}'

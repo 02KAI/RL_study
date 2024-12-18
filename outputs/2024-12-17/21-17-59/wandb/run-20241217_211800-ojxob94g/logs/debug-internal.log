@@ -1,0 +1,17 @@
+{"time":"2024-12-17T21:18:00.301859779+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-12-17T21:18:00.301876748+09:00","level":"INFO","msg":"created symlink","path":"/home/zhikai/code/RL_study/outputs/2024-12-17/21-17-59/wandb/run-20241217_211800-ojxob94g/logs/debug-core.log"}
+{"time":"2024-12-17T21:18:00.408206237+09:00","level":"INFO","msg":"created new stream","id":"ojxob94g"}
+{"time":"2024-12-17T21:18:00.408247975+09:00","level":"INFO","msg":"stream: started","id":"ojxob94g"}
+{"time":"2024-12-17T21:18:00.408272742+09:00","level":"INFO","msg":"sender: started","stream_id":"ojxob94g"}
+{"time":"2024-12-17T21:18:00.40826003+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ojxob94g"}}
+{"time":"2024-12-17T21:18:00.408281944+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ojxob94g"}}
+{"time":"2024-12-17T21:18:00.722343962+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-17T21:18:20.700626535+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-17T21:18:20.701096902+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-17T21:18:21.565560114+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-17T21:18:21.701377828+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history, summary, console logs","runtime_seconds":0.135662123}],"total_operations":1}}
+{"time":"2024-12-17T21:18:22.920908219+09:00","level":"INFO","msg":"stream: closing","id":"ojxob94g"}
+{"time":"2024-12-17T21:18:22.92093985+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"ojxob94g"}}
+{"time":"2024-12-17T21:18:22.920973776+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ojxob94g"}}
+{"time":"2024-12-17T21:18:22.921009622+09:00","level":"INFO","msg":"sender: closed","stream_id":"ojxob94g"}
+{"time":"2024-12-17T21:18:22.921083461+09:00","level":"INFO","msg":"stream: closed","id":"ojxob94g"}

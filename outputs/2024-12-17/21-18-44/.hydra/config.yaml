@@ -1,0 +1,21 @@
+env:
+  name: HalfCheetah-v4
+  num_envs: 8
+  seed: 42
+ppo:
+  actor_lr: 0.0003
+  critic_lr: 0.001
+  clip_param: 0.2
+  max_grad_norm: 0.5
+  ppo_epochs: 10
+  batch_size: 1024
+  gamma: 0.99
+  gae_lambda: 0.95
+train:
+  num_episodes: 1000
+  save_interval: 100
+  log_interval: 10
+  render: false
+eval:
+  eval_episodes: 3
+  render: true

@@ -1,0 +1,44 @@
+/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/registration.py:517: DeprecationWarning: [33mWARN: The environment HalfCheetah-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/mujoco/mujoco_env.py", line 13, in <module>
+    import mujoco
+ModuleNotFoundError: No module named 'mujoco'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zhikai/code/RL_study/main.py", line 270, in main
+    envs = gym.make_vec(cfg.env.name, num_envs=cfg.env.num_envs, render_mode="human" if cfg.train.render else None)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/registration.py", line 918, in make_vec
+    env = gym.vector.SyncVectorEnv(
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/vector/sync_vector_env.py", line 86, in __init__
+    self.envs = [env_fn() for env_fn in env_fns]
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/vector/sync_vector_env.py", line 86, in <listcomp>
+    self.envs = [env_fn() for env_fn in env_fns]
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/registration.py", line 903, in create_single_env
+    single_env = make(env_spec, **env_spec_kwargs.copy())
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/registration.py", line 702, in make
+    env_creator = load_env_creator(env_spec.entry_point)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/registration.py", line 549, in load_env_creator
+    mod = importlib.import_module(mod_name)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/mujoco/__init__.py", line 1, in <module>
+    from gymnasium.envs.mujoco.mujoco_env import MujocoEnv
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/mujoco/mujoco_env.py", line 15, in <module>
+    raise error.DependencyNotInstalled(
+gymnasium.error.DependencyNotInstalled: MuJoCo is not installed, run `pip install "gymnasium[mujoco]"`
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

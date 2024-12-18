@@ -1,0 +1,24 @@
+/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/registration.py:517: DeprecationWarning: [33mWARN: The environment HalfCheetah-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/registration.py:517: DeprecationWarning: [33mWARN: The environment HalfCheetah-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/wrappers/rendering.py:283: UserWarning: [33mWARN: Overwriting existing videos at /home/zhikai/code/RL_study/outputs/2024-12-17/22-03-51/videos folder (try specifying a different `video_folder` for the `RecordVideo` wrapper if this is not desired)[0m
+  logger.warn(
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/wrappers/rendering.py", line 303, in __init__
+    import moviepy  # noqa: F401
+ModuleNotFoundError: No module named 'moviepy'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zhikai/code/RL_study/main.py", line 282, in main
+    agent.evaluate(cfg.env.name, actor_path="/home/zhikai/code/RL_study/actor_ep1000.pth", num_episodes=cfg.eval.eval_episodes, render=cfg.eval.render, save_video_path="videos")
+  File "/home/zhikai/code/RL_study/main.py", line 244, in evaluate
+    env = RecordVideo(env, video_folder=save_video_path, episode_trigger=lambda x: True)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/wrappers/rendering.py", line 305, in __init__
+    raise error.DependencyNotInstalled(
+gymnasium.error.DependencyNotInstalled: MoviePy is not installed, run `pip install "gymnasium[other]"`
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

@@ -1,0 +1,17 @@
+{"time":"2024-12-17T20:59:36.882307293+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-12-17T20:59:36.88233224+09:00","level":"INFO","msg":"created symlink","path":"/home/zhikai/code/RL_study/outputs/2024-12-17/20-59-36/wandb/run-20241217_205936-h41fko2z/logs/debug-core.log"}
+{"time":"2024-12-17T20:59:36.994035531+09:00","level":"INFO","msg":"created new stream","id":"h41fko2z"}
+{"time":"2024-12-17T20:59:36.99408708+09:00","level":"INFO","msg":"stream: started","id":"h41fko2z"}
+{"time":"2024-12-17T20:59:36.994120009+09:00","level":"INFO","msg":"sender: started","stream_id":"h41fko2z"}
+{"time":"2024-12-17T20:59:36.994120158+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"h41fko2z"}}
+{"time":"2024-12-17T20:59:36.99411806+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"h41fko2z"}}
+{"time":"2024-12-17T20:59:37.286287857+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-17T20:59:52.863558936+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-17T20:59:52.864207726+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-17T20:59:53.86393952+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.786966635}],"total_operations":1}}
+{"time":"2024-12-17T20:59:55.412161697+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-17T20:59:56.651315268+09:00","level":"INFO","msg":"stream: closing","id":"h41fko2z"}
+{"time":"2024-12-17T20:59:56.651331589+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"h41fko2z"}}
+{"time":"2024-12-17T20:59:56.651345257+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"h41fko2z"}}
+{"time":"2024-12-17T20:59:56.651368683+09:00","level":"INFO","msg":"sender: closed","stream_id":"h41fko2z"}
+{"time":"2024-12-17T20:59:56.65141138+09:00","level":"INFO","msg":"stream: closed","id":"h41fko2z"}

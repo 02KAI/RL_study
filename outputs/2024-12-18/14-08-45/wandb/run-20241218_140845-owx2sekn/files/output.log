@@ -1,0 +1,23 @@
+/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/registration.py:517: DeprecationWarning: [33mWARN: The environment HalfCheetah-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/registration.py:517: DeprecationWarning: [33mWARN: The environment HalfCheetah-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/wrappers/rendering.py:283: UserWarning: [33mWARN: Overwriting existing videos at /home/zhikai/code/RL_study/outputs/2024-12-18/14-08-45/videos folder (try specifying a different `video_folder` for the `RecordVideo` wrapper if this is not desired)[0m
+  logger.warn(
+/home/zhikai/code/RL_study/main.py:246: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.actor.load_state_dict(torch.load(actor_path, map_location=device))
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/home/zhikai/code/RL_study/main.py", line 282, in main
+    agent.evaluate(cfg.env.name, actor_path="/home/zhikai/code/RL_study/0.5.pth", num_episodes=cfg.eval.eval_episodes, render=cfg.eval.render, save_video_path="videos")
+  File "/home/zhikai/code/RL_study/main.py", line 246, in evaluate
+    self.actor.load_state_dict(torch.load(actor_path, map_location=device))
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/torch/serialization.py", line 1319, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/torch/serialization.py", line 659, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/torch/serialization.py", line 640, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zhikai/code/RL_study/0.5.pth'
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

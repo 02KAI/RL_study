@@ -1,0 +1,75 @@
+/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/registration.py:517: DeprecationWarning: [33mWARN: The environment HalfCheetah-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/torch/autograd/graph.py:825: UserWarning: CUDA initialization: CUDA unknown error - this may be due to an incorrectly set up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[2024-12-17 20:51:17,003][__main__][INFO] - Episode 10, Average Reward: -620.08, Actor Loss: -0.0161
+[2024-12-17 20:51:31,362][__main__][INFO] - Episode 20, Average Reward: -583.68, Actor Loss: -0.0157
+[2024-12-17 20:51:45,859][__main__][INFO] - Episode 30, Average Reward: -539.39, Actor Loss: -0.0156
+[2024-12-17 20:52:00,015][__main__][INFO] - Episode 40, Average Reward: -503.08, Actor Loss: -0.0168
+[2024-12-17 20:52:14,229][__main__][INFO] - Episode 50, Average Reward: -470.27, Actor Loss: -0.0153
+[2024-12-17 20:52:28,202][__main__][INFO] - Episode 60, Average Reward: -450.65, Actor Loss: -0.0156
+[2024-12-17 20:52:42,384][__main__][INFO] - Episode 70, Average Reward: -413.53, Actor Loss: -0.0156
+[2024-12-17 20:52:56,474][__main__][INFO] - Episode 80, Average Reward: -375.64, Actor Loss: -0.0157
+[2024-12-17 20:53:11,141][__main__][INFO] - Episode 90, Average Reward: -300.20, Actor Loss: -0.0168
+[2024-12-17 20:53:25,431][__main__][INFO] - Saved model at Episode 100: models/20241217_205102_seed42/actor_ep100.pth
+[2024-12-17 20:53:25,432][__main__][INFO] - Episode 100, Average Reward: -241.11, Actor Loss: -0.0152
+[2024-12-17 20:53:39,862][__main__][INFO] - Episode 110, Average Reward: -160.43, Actor Loss: -0.0146
+[2024-12-17 20:53:54,360][__main__][INFO] - Episode 120, Average Reward: -96.23, Actor Loss: -0.0146
+[2024-12-17 20:54:08,735][__main__][INFO] - Episode 130, Average Reward: -33.57, Actor Loss: -0.0165
+[2024-12-17 20:54:23,124][__main__][INFO] - Episode 140, Average Reward: 36.37, Actor Loss: -0.0147
+[2024-12-17 20:54:36,989][__main__][INFO] - Episode 150, Average Reward: 81.76, Actor Loss: -0.0143
+[2024-12-17 20:54:51,200][__main__][INFO] - Episode 160, Average Reward: 113.96, Actor Loss: -0.0138
+[2024-12-17 20:55:05,861][__main__][INFO] - Episode 170, Average Reward: 160.12, Actor Loss: -0.0150
+[2024-12-17 20:55:19,982][__main__][INFO] - Episode 180, Average Reward: 218.83, Actor Loss: -0.0141
+[2024-12-17 20:55:33,987][__main__][INFO] - Episode 190, Average Reward: 259.89, Actor Loss: -0.0136
+[2024-12-17 20:55:47,674][__main__][INFO] - Saved model at Episode 200: models/20241217_205102_seed42/actor_ep200.pth
+[2024-12-17 20:55:47,674][__main__][INFO] - Episode 200, Average Reward: 284.22, Actor Loss: -0.0137
+[2024-12-17 20:56:01,492][__main__][INFO] - Episode 210, Average Reward: 349.96, Actor Loss: -0.0136
+[2024-12-17 20:56:14,934][__main__][INFO] - Episode 220, Average Reward: 420.30, Actor Loss: -0.0139
+[2024-12-17 20:56:28,727][__main__][INFO] - Episode 230, Average Reward: 548.91, Actor Loss: -0.0137
+[2024-12-17 20:56:42,791][__main__][INFO] - Episode 240, Average Reward: 620.22, Actor Loss: -0.0123
+[2024-12-17 20:56:56,661][__main__][INFO] - Episode 250, Average Reward: 790.24, Actor Loss: -0.0120
+[2024-12-17 20:57:11,045][__main__][INFO] - Episode 260, Average Reward: 928.46, Actor Loss: -0.0124
+[2024-12-17 20:57:25,022][__main__][INFO] - Episode 270, Average Reward: 1043.84, Actor Loss: -0.0123
+[2024-12-17 20:57:39,331][__main__][INFO] - Episode 280, Average Reward: 1142.21, Actor Loss: -0.0119
+[2024-12-17 20:57:53,457][__main__][INFO] - Episode 290, Average Reward: 1203.05, Actor Loss: -0.0125
+[2024-12-17 20:58:07,454][__main__][INFO] - Saved model at Episode 300: models/20241217_205102_seed42/actor_ep300.pth
+[2024-12-17 20:58:07,454][__main__][INFO] - Episode 300, Average Reward: 1325.82, Actor Loss: -0.0120
+Traceback (most recent call last):
+  File "/home/zhikai/code/RL_study/main.py", line 279, in <module>
+    main()
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/hydra/_internal/hydra.py", line 119, in run
+    ret = run_job(
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/home/zhikai/code/RL_study/main.py", line 274, in main
+    model_path = agent.train(cfg, save_interval=cfg.train.save_interval, log_interval=cfg.train.log_interval)
+  File "/home/zhikai/code/RL_study/main.py", line 196, in train
+    next_state, reward, terminations, truncations, _ = self.envs.step(action)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/vector/sync_vector_env.py", line 222, in step
+    ) = self.envs[i].step(action)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/wrappers/common.py", line 125, in step
+    observation, reward, terminated, truncated, info = self.env.step(action)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/wrappers/common.py", line 393, in step
+    return super().step(action)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/core.py", line 322, in step
+    return self.env.step(action)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/wrappers/common.py", line 285, in step
+    return self.env.step(action)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/mujoco/half_cheetah_v4.py", line 76, in step
+    self.do_simulation(action, self.frame_skip)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/mujoco/mujoco_env.py", line 205, in do_simulation
+    self._step_mujoco_simulation(ctrl, n_frames)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/mujoco/mujoco_env.py", line 153, in _step_mujoco_simulation
+    mujoco.mj_step(self.model, self.data, nstep=n_frames)
+KeyboardInterrupt

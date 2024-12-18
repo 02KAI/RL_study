@@ -1,0 +1,19 @@
+/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/registration.py:517: DeprecationWarning: [33mWARN: The environment HalfCheetah-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/registration.py:517: DeprecationWarning: [33mWARN: The environment HalfCheetah-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/wrappers/rendering.py:283: UserWarning: [33mWARN: Overwriting existing videos at /home/zhikai/code/RL_study/outputs/2024-12-17/22-04-25/videos folder (try specifying a different `video_folder` for the `RecordVideo` wrapper if this is not desired)[0m
+  logger.warn(
+/home/zhikai/code/RL_study/main.py:246: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.actor.load_state_dict(torch.load(actor_path, map_location=device))
+[2024-12-17 22:04:35,862][__main__][INFO] - Episode 1: Reward: 1269.83
+[2024-12-17 22:04:48,316][__main__][INFO] - Episode 2: Reward: 1254.65
+[2024-12-17 22:05:00,821][__main__][INFO] - Episode 3: Reward: 1266.80
+[2024-12-17 22:05:13,598][__main__][INFO] - Episode 4: Reward: 1264.80
+[2024-12-17 22:05:26,443][__main__][INFO] - Episode 5: Reward: 1263.96
+[2024-12-17 22:05:38,983][__main__][INFO] - Episode 6: Reward: 1261.98
+[2024-12-17 22:05:51,432][__main__][INFO] - Episode 7: Reward: 1263.61
+[2024-12-17 22:06:03,775][__main__][INFO] - Episode 8: Reward: 1266.56
+[2024-12-17 22:06:16,079][__main__][INFO] - Episode 9: Reward: 1260.82
+[2024-12-17 22:06:28,692][__main__][INFO] - Episode 10: Reward: 1259.87
+[2024-12-17 22:06:33,759][__main__][INFO] - Videos saved to: videos

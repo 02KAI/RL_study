@@ -1,0 +1,27 @@
+/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/gymnasium/envs/registration.py:517: DeprecationWarning: [33mWARN: The environment HalfCheetah-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/home/zhikai/code/RL_study/main.py", line 271, in main
+    agent = PPO(envs, cfg)
+  File "/home/zhikai/code/RL_study/main.py", line 99, in __init__
+    self.actor = Actor(self.envs)
+  File "/home/zhikai/code/RL_study/main.py", line 71, in __init__
+    self.to(device)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1340, in to
+    return self._apply(convert)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/torch/nn/modules/module.py", line 927, in _apply
+    param_applied = fn(param)
+  File "/home/zhikai/miniconda3/envs/rl4co/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1326, in convert
+    return t.to(
+RuntimeError: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

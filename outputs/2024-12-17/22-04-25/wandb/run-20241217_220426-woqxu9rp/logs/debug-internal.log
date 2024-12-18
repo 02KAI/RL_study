@@ -1,0 +1,17 @@
+{"time":"2024-12-17T22:04:26.13899864+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-12-17T22:04:26.139046814+09:00","level":"INFO","msg":"created symlink","path":"/home/zhikai/code/RL_study/outputs/2024-12-17/22-04-25/wandb/run-20241217_220426-woqxu9rp/logs/debug-core.log"}
+{"time":"2024-12-17T22:04:26.250272167+09:00","level":"INFO","msg":"created new stream","id":"woqxu9rp"}
+{"time":"2024-12-17T22:04:26.250312384+09:00","level":"INFO","msg":"stream: started","id":"woqxu9rp"}
+{"time":"2024-12-17T22:04:26.250349703+09:00","level":"INFO","msg":"sender: started","stream_id":"woqxu9rp"}
+{"time":"2024-12-17T22:04:26.250352874+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"woqxu9rp"}}
+{"time":"2024-12-17T22:04:26.250348226+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"woqxu9rp"}}
+{"time":"2024-12-17T22:04:26.601178148+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-17T22:06:33.762278121+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-17T22:06:33.762804813+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-17T22:06:34.762800136+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.621801416}],"total_operations":1}}
+{"time":"2024-12-17T22:06:37.519584448+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-17T22:06:38.852188806+09:00","level":"INFO","msg":"stream: closing","id":"woqxu9rp"}
+{"time":"2024-12-17T22:06:38.852220677+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"woqxu9rp"}}
+{"time":"2024-12-17T22:06:38.852248216+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"woqxu9rp"}}
+{"time":"2024-12-17T22:06:38.852264972+09:00","level":"INFO","msg":"sender: closed","stream_id":"woqxu9rp"}
+{"time":"2024-12-17T22:06:38.852395941+09:00","level":"INFO","msg":"stream: closed","id":"woqxu9rp"}

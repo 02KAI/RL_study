@@ -1,0 +1,1 @@
+{"_runtime":427.671594789,"_step":300,"average_reward":1630.326609471214,"episode":301,"global_step":301000,"actor_loss":-0.012366342637687922,"_timestamp":1.734436688914005e+09,"_wandb":{"runtime":428},"critic_loss":250.22991790771485}

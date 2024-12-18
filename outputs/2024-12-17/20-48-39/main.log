@@ -1,0 +1,13 @@
+[2024-12-17 20:48:43,537][__main__][INFO] - Episode 1, Average Reward: -628.36, Actor Loss: -0.0176
+[2024-12-17 20:48:44,990][__main__][INFO] - Saved model at Episode 2: models/20241217_204842_seed42/actor_ep2.pth
+[2024-12-17 20:48:44,991][__main__][INFO] - Episode 2, Average Reward: -633.38, Actor Loss: -0.0164
+[2024-12-17 20:49:01,885][__main__][INFO] - Episode 1: Reward: -2.60
+[2024-12-17 20:49:18,570][__main__][INFO] - Episode 2: Reward: -1.64
+[2024-12-17 20:49:35,253][__main__][INFO] - Episode 3: Reward: -0.00
+[2024-12-17 20:49:51,936][__main__][INFO] - Episode 4: Reward: -0.39
+[2024-12-17 20:50:05,070][__main__][INFO] - Episode 5: Reward: -0.63
+[2024-12-17 20:50:05,459][__main__][INFO] - Episode 6: Reward: -0.47
+[2024-12-17 20:50:05,836][__main__][INFO] - Episode 7: Reward: -0.43
+[2024-12-17 20:50:06,210][__main__][INFO] - Episode 8: Reward: -0.41
+[2024-12-17 20:50:06,583][__main__][INFO] - Episode 9: Reward: -0.78
+[2024-12-17 20:50:06,956][__main__][INFO] - Episode 10: Reward: -0.63
