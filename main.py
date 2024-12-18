@@ -278,8 +278,8 @@ def main(cfg: DictConfig):
     envs = gym.make_vec(cfg.env.name, num_envs=cfg.env.num_envs, render_mode="human" if cfg.train.render else None)
     agent = PPO(envs, cfg)
     
-    model_path = agent.train(cfg, save_interval=cfg.train.save_interval, log_interval=cfg.train.log_interval)
-    agent.evaluate(cfg.env.name, actor_path=model_path, num_episodes=cfg.eval.eval_episodes, render=cfg.eval.render, save_video_path="videos")
+    # model_path = agent.train(cfg, save_interval=cfg.train.save_interval, log_interval=cfg.train.log_interval)
+    agent.evaluate(cfg.env.name, actor_path="/home/zhikai/code/RL_study/0.05.pth", num_episodes=cfg.eval.eval_episodes, render=cfg.eval.render, save_video_path="videos")
     wandb.finish()
 
 if __name__ == "__main__":
